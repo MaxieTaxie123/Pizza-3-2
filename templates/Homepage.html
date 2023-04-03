@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styler.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='script/jscript.js') }}" defer></script>
+    <title>Home | M&amp;L Pizzeria</title>
+</head>
+<body>
+    <div class="topnav">
+      <a class="active" href="/">Home</a>
+      <a href="menu">Menu</a>
+      <a href="about">About</a>
+      <a href="login"></a>
+      <a href="Cart"></a>
+    </div>
+    <br>
+    <h1>Welcome</h1>
+    <hr>
+    <br>
+    <div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="{{ url_for('static', filename='images/pizza-salami.jpg') }}" style="width:55%">
+      <div class="text">Caption Text</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="{{ url_for('static', filename='images/chocolate-chip-cookie.jpg') }}" style="width:55%">
+      <div class="text">Caption Two</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="{{ url_for('static', filename='images/banana-smoothie.jpg') }}" style="width:55%">
+      <div class="text">Caption Three</div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+</body>
