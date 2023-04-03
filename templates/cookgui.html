@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="refresh" content="5">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="static/styles.css" />
+
+        <title>CookGUI</title>
+    </head>
+    
+    <body>
+        <div class="row">
+            <div class="column">
+                <table>
+                    <tr>
+                        <th class="ordrlst">Order List</th>
+                    </tr>
+                </table><br><br> {% if finalOrder[0] is not defined %}{% else %}
+                <table>
+                    <tr>
+                        <td class="fdlst">
+    
+                            <ul class="placement">
+                                <li>{{finalOrder[0]}}</li>
+                                <form id="placement1" action="/orderdone" method="post">
+                                    <button class="yes" type="submit" value="yes" name="press">∨</button><br><br>
+                                    <button class="no" type="submit" value="no" name="press">X</button></td>
+                        <input class="hiddeninput" value="0" name="placeinlist">
+                        </form>
+                        </ul>
+                        </td>
+    
+    
+                    </tr>
+                </table>{% endif %}{% if finalOrder[1] is not defined %}{% else %}<br><br>
+                <table>
+                    <tr>
+                        <td class="fdlst">
+    
+                            <ul class="placement">
+                                <li>{{finalOrder[1]}}</li>
+                                <form id="placement1" action="/orderdone" method="post">
+                                    <button class="yes" type="submit" value="yes" name="press">∨</button><br><br>
+                                    <button class="no" type="submit" value="no" name="press">X</button></td>
+                        <input class="hiddeninput" value="1" name="placeinlist">
+                        </form>
+                        </ul>
+                        </td>
+    
+    
+                    </tr>
+                </table>{% endif %}{% if finalOrder[2] is not defined %}{% else %}<br><br>
+                <table>
+                    <tr>
+                        <td class="fdlst">
+                            <ul class="placement">
+                                <li>{{finalOrder[2]}}</li>
+                                <form id="placement1" action="/orderdone" method="post">
+                                    <button class="yes" type="submit" value="yes" name="press">∨</button><br><br>
+                                    <button class="no" type="submit" value="no" name="press">X</button></td>
+                        <input class="hiddeninput" value="2" name="placeinlist">
+                        </form>
+                        </ul>
+                        </td>
+    
+    
+                    </tr>
+                </table>
+                {% endif %}{% if finalOrder[3] is not defined %}{% else %}<br><br>
+                <table>
+                    <tr>
+                        <td class="fdlst">
+                            <ul class="placement">
+                                <li>{{finalOrder[3]}}</li>
+                                <form id="placement1" action="/orderdone" method="post">
+                                    <button class="yes" type="submit" value="yes" name="press">∨</button><br><br>
+                                    <button class="no" type="submit" value="no" name="press">X</button></td>
+                        <input class="hiddeninput" value="3" name="placeinlist">
+                        </form>
+                        </ul>
+                        </td>
+    
+    
+                    </tr>
+                </table>{% endif %}{% if finalOrder[4] is not defined %}{% else %}<br><br>
+                <table>
+                    <tr>
+                        <td class="fdlst">
+                            <ul class="placement">
+                                <li>{{finalOrder[4]}}</li>
+                                <form id="placement1" action="/orderdone" method="post">
+                                    <button class="yes" type="submit" value="yes" name="press">∨</button><br><br>
+                                    <button class="no" type="submit" value="no" name="press">X</button></td>
+                        <input class="hiddeninput" value="4" name="placeinlist">
+                        </form>
+                        </ul>
+                        </td>
+    
+    
+                    </tr>
+                </table>
+                {% endif %}{% if finalOrder[5] is not defined %}{% else %}<br><br>
+                <table>
+                    <tr>
+                        <td class="fdlst">
+                            <ul class="placement">
+                                <li>{{finalOrder[5]}}</li>
+                                <form id="placement1" action="/orderdone" method="post">
+                                    <button class="yes" type="submit" value="yes" name="press">∨</button><br><br>
+                                    <button class="no" type="submit" value="no" name="press">X</button></td>
+                        <input class="hiddeninput" value="5" name="placeinlist">
+                        </form>
+                        </ul>
+                        </td>
+    
+    
+                    </tr>
+                </table>{% endif %}{% if finalOrder[6] is not defined %}{% else %}<br><br>
+                <table>
+                    <tr>
+                        <td class="fdlst">
+                            <ul class="placement">
+                                <li>{{finalOrder[6]}}</li>
+                                <form id="placement1" action="/orderdone" method="post">
+                                    <button class="yes" type="submit" value="yes" name="press">∨</button><br><br>
+                                    <button class="no" type="submit" value="no" name="press">X</button></td>
+                        <input class="hiddeninput" value="6" name="placeinlist">
+                        </form>
+                        </ul>
+                        </td>
+    
+    
+                    </tr>
+                </table>{% endif %}{% if finalOrder[7] is not defined %}{% else %}<br><br>
+                <table>
+                    <tr>
+                        <td class="fdlst">
+                            <ul class="placement">
+                                <li>{{finalOrder[7]}}</li>
+                                <form id="placement1" action="/orderdone" method="post">
+                                    <button class="yes" type="submit" value="yes" name="press">∨</button><br><br>
+                                    <button class="no" type="submit" value="no" name="press">X</button></td>
+                        <input class="hiddeninput" value="7" name="placeinlist">
+                        </form>
+                        </ul>
+                        </td>
+    
+    
+                    </tr>
+                </table>{% endif %}<br><br>
+            </div>
+        </div>
+    </body>
+    
+    
+</html>
