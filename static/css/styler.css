@@ -172,6 +172,11 @@ a.media{
     height: auto;
     margin: 3px;
     border-radius: 50%;
+    text-align: center;
+}
+
+.icons{
+  display: block;
 }
 
 /*Elias's Code*/
