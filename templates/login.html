@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login | M&amp;L Pizzeria</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styler.css') }}">
+    <link rel="icon" href ="{{ url_for('static', filename= 'images/pizza.png') }}" type = "image/x-icon">
+</head>
+<body>
+    <div class="center">
+        <form action="/form_login" method="post">
+            <div class="text_field">
+                <div class="social_icons">
+                    <p>Sign in using:</p>
+                    <a href="#"><img src="https://pbs.twimg.com/media/ELOV640XkAAQq_Z.png"></a>or
+                    <a href="#"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/63f1fa19-6c94-43b4-ba7e-e5d2ff356331/dd81xm1-dae0fbc8-bef8-4ed5-a9c6-776aa07e08aa.png/v1/fill/w_898,h_890,strp/luigi_icon_by_usanintendo_dd81xm1-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI2OCIsInBhdGgiOiJcL2ZcLzYzZjFmYTE5LTZjOTQtNDNiNC1iYTdlLWU1ZDJmZjM1NjMzMVwvZGQ4MXhtMS1kYWUwZmJjOC1iZWY4LTRlZDUtYTljNi03NzZhYTA3ZTA4YWEucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.x7XOCPDpDOITnhVGZlPgX0zn2IG2r26_4FTNjpEq3dU"></a>
+                </div>
+                <div class="text_field">
+                    <input type="text" name="username">
+                    <span></span>
+                    <label>Username</label>
+                </div>
+                <div class="text_field">
+                    <input name="password">
+                    <span></span>
+                    <label>Password</label>
+                </div>   
+        <input type="submit" value="Login">
+        <br>
+            <div class="mario_luigi">
+                <img src="http://images2.fanpop.com/image/photos/9200000/Super-Mario-Bros-Deluxe-mario-and-luigi-9298293-156-146.gif">
+            </div>
+        <br>
+        
+            <div class="forgot_pass">
+                <p>Forgot Password? <a href="#">Contact support</a></p>
+                <a href="/">Back to Homepage</a>
+            </div>
+        <br>
+        <div class="invalid">
+            <p>{{info}}</p>
+        </div>
+
+            </form>
+        </div>
+</body>
+</html>
